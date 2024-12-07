@@ -1,0 +1,95 @@
+site_name: Prancer documentation
+site_url: https://prancer.io
+google_analytics: ['UA-133762205-1', 'prancer.io']
+docs_dir: docs/docs
+site_dir: docs/build
+extra_css: ['extra.css']
+markdown_extensions:
+    - toc:
+        permalink: True
+theme:
+  custom_dir: docs/theme
+  name: readthedocs
+nav:
+  - Getting Started!: index.md
+  - Terminology: terminology.md
+  - Installation: installation.md
+  - Workflow: workflow.md
+  - How to Access: access.md
+  - How to Run CLI: cli_run.md
+  - Configuration:
+    - Files and Folders structure: configuration/basics.md
+    - Configuration file: configuration/config.md
+    - Logging: configuration/logging.md
+    - Secrets: configuration/secrets.md
+  - Connectors:
+    - Definition: connectors/connector-definition.md
+    - Filesystem connector: connectors/filesystem.md
+    - AWS connector: connectors/aws.md
+    - Azure connector: connectors/azure.md
+    - Azure Board connector: connectors/azboard.md
+    - Jira connector: connectors/jira.md
+    - Slack connector: connectors/slack.md
+    - Teams connector: connectors/teams.md
+    - Google connector: connectors/google.md
+    - Kubernetes connector: connectors/kubernetes.md
+  - Crawler:
+    - Definition: crawler/crawler-definition.md
+    - Azure Crawler: crawler/azure-crawler.md
+    - AWS Crawler: crawler/aws-crawler.md
+    - GCP Crawler: crawler/gcp-crawler.md
+  - Snapshots:
+    - Definition: snapshots/snapshot-definition.md
+    - AWS snapshot: snapshots/aws.md
+    - Azure snapshot: snapshots/azure.md
+    - Google snapshot: snapshots/google.md
+    - Filesystem snapshot: snapshots/filesystem.md
+    - Helm snapshot: snapshots/helm.md
+    - Kubernetes snapshot: snapshots/kubernetes.md
+  - Tests:
+    - Definition: tests/tests-definition.md
+    - Test basics: tests/basics.md
+    - Master test file: tests/master-test.md
+    - Looking for test data: tests/look-for-data.md
+    - Rule syntax: tests/syntax.md
+    - OPA Integration: tests/opa.md
+    - Test ouput files: tests/outputs.md
+  - Exclusions:
+    - Exclusion file: exclusions/exclusion.md
+  - Notification:
+    - Notification file: notification/notification.md
+  - Limitations & workarounds:
+    - AWS resources: limitations/aws-limitations.md
+    - AWS CloudFormation templates: limitations/aws-cloudformation-template-limitations.md
+    - Azure ARM templates: limitations/azure-arm-templates-limitations.md
+    - Terraform templates: limitations/terraform-template-limitations.md
+    - Json: limitations/json-limitations.md
+  - Enterprise edition:
+    - Features: enterprise/basics.md
+    - Use case: enterprise/use-case.md
+    - Backup & export: enterprise/backup-export.md
+  - API Reference:
+    - overview: api/api_overview.md
+    - Prancer APIs: api/apis_available.md
+    - authentication: api/authentication.md
+    - collection: api/collection.md
+    - compliance: api/compliance.md
+    - connector: api/connector.md
+    - configuration: api/config.md
+    - dashboard: api/dashboard.md
+    - policy: api/policy.md
+    - remediation: api/remediation.md
+    - reports: api/reports.md
+    - resources: api/resources.md
+    - tags: api/tags.md
+    - users: api/users.md
+    - permissions: api/permissions.md
+    - vault: api/vault.md
+    - webhook: api/webhook.md
+    - wizard: api/wizard.md
+    - logs: api/logs.md
+    - notification: api/notification.md
+    - azure board: api/azureboardintegration.md
+    - jira: api/jiraintegration.md
+    - sso: api/sso.md
+    - drift detection: api/drift_detection.md
